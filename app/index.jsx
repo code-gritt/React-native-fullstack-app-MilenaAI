@@ -7,8 +7,8 @@ export default function App() {
     <View style={modalstyles.container}>
       <Text style={modalstyles.font}>Milena AI</Text>
       <StatusBar style="auto" />
-      <Link href="/profile" style={{ color: "blue" }}>
-        Go to profile
+      <Link href="/home" className="text-pblack">
+        Go to Home
       </Link>
     </View>
   );
