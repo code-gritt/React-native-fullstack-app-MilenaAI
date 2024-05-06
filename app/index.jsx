@@ -7,9 +7,13 @@ import { images } from "../constants";
 
 import { useGlobalContext } from "../context/GlobalProvider";
 import CustomButton from "../components/CustomButton";
-import { Loader } from "../components/Loader";
+// import { Loader } from "../components/Loader";
 
 export default function App() {
+  // const { loading, isLogged } = useGlobalContext();
+
+  // if (!loading && isLogged) return <Redirect href="/home" />;
+
   return (
     <SafeAreaView style={{ backgroundColor: "#161622", height: "100%" }}>
       {/* <Loader isLoading={loading} /> */}
@@ -28,6 +32,7 @@ export default function App() {
             width: "100%",
             paddingLeft: "16px",
             paddingRight: "16px",
+            minHeight: "85vh",
           }}
         >
           <Image
